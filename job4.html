@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>城市旅行写生本交流夜 · City Sketchbook Night</title>
+    <style>
+        .page {
+            display: inline-block;
+            background-color: #E3F7F7; /* 学号末位9指定背景色：海盐青 */
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+            padding: 20px 40px; /* 增加内边距提升可读性 */
+            margin: 20px auto; /* 居中显示 */
+        }
+
+        /* 并集选择器：所有标题统一样式 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #2D5B79;
+            font-family: "Microsoft YaHei", sans-serif;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #B8E3FF;
+            padding-bottom: 8px;
+        }
+
+        /* 后代选择器：div中的table内链接样式 */
+        div table a {
+            color: #1E88E5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* 链接伪类：四种状态 */
+        a:link {
+            color: #1E88E5;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #7B1FA2;
+        }
+        a:hover {
+            color: #FF5722;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        a:active {
+            color: #D32F2F;
+        }
+
+        /* ID选择器：重要提示强调样式 */
+        p#intro {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #D32F2F;
+            background-color: #FFF8E1;
+            padding: 10px;
+            border-left: 4px solid #FFA000;
+        }
+
+        /* 带类名的链接样式 */
+        a.red {
+            color: #E53935;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border: 1px solid #E53935;
+            border-radius: 4px;
+            margin-right: 15px;
+        }
+        a.blue {
+            color: #1976D2;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border: 1px solid #1976D2;
+            border-radius: 4px;
+        }
+
+        /* 伪元素样式 */
+        p::first-letter {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2D5B79;
+            float: left;
+            margin-right: 8px;
+            line-height: 1;
+        }
+        div::first-line {
+            font-weight: 600;
+            color: #2D5B79;
+        }
+
+        /* 表格样式优化 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #81C784;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #B2EBF2;
+            color: #2D5B79;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #F5FAFA;
+        }
+
+        /* 底部公告区样式 */
+        .notice {
+            background-color: #F0F8FF;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 30px;
+            border: 1px dashed #90CAF9;
+        }
+
+        /* 段落样式优化 */
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- ①顶部标题区 -->
+        <div>
+            <h1>曲水亭街城市旅行写生本交流夜 · City Sketchbook Night</h1>
+        </div>
+
+        <!-- ②活动介绍区 -->
+        <div>
+            <h2>活动介绍</h2>
+            <p>当笔尖邂逅老城肌理，当色彩定格泉城时光，这场旅行写生交流夜专为热爱行走与记录的你而来。曲水亭街的青石板路、百花洲的白墙黛瓦、大明湖的波光粼粼，都是我们的天然画纸。无论你是专业画手，还是只想用速写本留住旅途点滴的爱好者，都能在这里找到共鸣。</p>
+            <p>Travel is not just about reaching destinations, but about capturing the moments that take your breath away. 本次活动将邀请资深写生达人分享旅行速写技巧，指导大家用线条、色彩和文字，把济南的老街巷、慢生活转化为独一无二的写生作品。我们鼓励用多元形式记录——铅笔速写、水彩淡彩、钢笔淡彩，甚至可以在画旁标注旅行感悟，让写生本成为最珍贵的旅行纪念。</p>
+            <p>活动现场将设置作品展示角，大家可以互相交流写生心得、分享旅行故事，结识志同道合的“旅行记录者”。我们相信，每一本写生本都是一段独特的journey，每一幅小画都藏着对生活的热爱。</p>
+            <p id="intro">重要提示：请参与者携带个人写生本、绘画工具（铅笔、钢笔、水彩等均可），建议提前了解曲水亭街历史背景，以便更好地捕捉创作灵感！</p>
+        </div>
+
+        <!-- ③活动报名信息表格区 -->
+        <div>
+            <h3>写生爱好者报名登记表</h3>
+            <table>
+                <tr>
+                    <<th>姓名</</th>
+                    <<th>写生擅长形式</</th>
+                    <<th>旅行写生经历</</th>
+                    <<th>联系邮箱</</th>
+                    <<th>是否需要工具支持</</th>
+                </tr>
+                <tr>
+                    <td>林晓雨</td>
+                    <td>钢笔淡彩</td>
+                    <td>曾写生西安古城墙、丽江古城</td>
+                    <td><a href="mailto:linxy@example.com">linxy@example.com</a></td>
+                    <td>否</td>
+                </tr>
+                <tr>
+                    <td>陈浩宇</td>
+                    <td>铅笔速写</td>
+                    <td>青岛八大关、厦门鼓浪屿写生</td>
+                    <td><a href="mailto:chenhy@example.com">chenhy@example.com</a></td>
+                    <td>否</td>
+                </tr>
+                <tr>
+                    <td>苏曼琪</td>
+                    <td>水彩写生</td>
+                    <td>杭州西湖、苏州园林写生</td>
+                    <td><a href="mailto:sumanqi@example.com">sumanqi@example.com</a></td>
+                    <td>是（需要水彩颜料）</td>
+                </tr>
+                <tr>
+                    <td>李伟杰</td>
+                    <td>混合材料</td>
+                    <td>敦煌莫高窟、张家界写生</td>
+                    <td><a href="mailto:liwj@example.com">liwj@example.com</a></td>
+                    <td>否</td>
+                </tr>
+                <tr>
+                    <td>张思远</td>
+                    <td>简笔画+文字</td>
+                    <td>首次参与旅行写生</td>
+                    <td><a href="mailto:zhangsy@example.com">zhangsy@example.com</a></td>
+                    <td>是（需要速写本）</td>
+                </tr>
+                <tr>
+                    <td>Emily Clark</td>
+                    <td>Oil Painting Sketch</td>
+                    <td>Traveled and sketched in Paris, Florence</td>
+                    <td><a href="mailto:emily@example.com">emily@example.com</a></td>
+                    <td>No</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ④页面链接区 -->
+        <div>
+            <h3>相关链接</h3>
+            <div>
+                <a href="https://hongchenwusdnu.github.io/bookstore/job4.html" class="red">查看往期写生活动照片</a>
+                <a href="https://cll0439.github.io/caolanlan/job3.html" class="blue">在线咨询写生活动详情</a>
+            </div>
+        </div>
+
+        <!-- ⑤底部公告区 -->
+        <div class="notice">
+            <h3>活动公告</h3>
+            <p>1. 活动时间：2025年5月18日（周日）14:00-17:30，集合地点：曲水亭街北口（百花洲对面），请提前15分钟到场签到。<br>
+            2. 本次活动免费参与，限30人报名，报满即止，报名截止时间：2025年5月10日24:00。<br>
+            3. 活动当天将提供简易茶点，若有饮食禁忌请在报名时备注；活动结束后优秀作品将在校园艺术长廊展出，参与者可获得定制写生纪念徽章一枚。<br>
+            4. 如遇雨天，活动将延期至5月25日，具体通知将通过报名邮箱发送，请保持通讯畅通。</p>
+        </div>
+    </div>
+</body>
+</html>
